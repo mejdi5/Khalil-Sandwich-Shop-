@@ -7,10 +7,13 @@ app.use(express.json());
 app.use(cors());
 app.use(morgan("dev"));
 
-// Test Route
-app.get("/", (req, res) => {
-  res.send("Hello!");
-});
+//routes
+app.use("/api/auth", require('./routes/authentication'));
+app.use("/api/users", require('./routes/users'));
+app.use("/api/commandes", require('./routes/commandes'));
+app.use("/api/produits", require('./routes/produits'));
+app.use("/api/ingredients", require('./routes/ingredients'));
+app.use("/api/paiements", require('./routes/paiements'));
 
 // Start the Server
 const PORT = process.env.PORT || 3000;
