@@ -6,9 +6,9 @@ const { registerController, loginController, logoutController } = require('../co
 router.post("/register", registerController); 
 
 //LOGIN
-router.post("/register", loginController); 
+router.post("/login", loginController); 
 
 //LOGOUT
-router.post("/register", logoutController); 
+router.post("/logout", logoutController); 
 
 module.exports = router;
