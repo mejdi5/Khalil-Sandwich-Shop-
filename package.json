@@ -1,0 +1,29 @@
+{
+  "name": "sandwich-shop",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "server": "nodemon index.js",
+
+    "create-table": "node models/actions/createTable.js", 
+    "delete-table": "node models/actions/deleteTable.js", 
+    "drop-all-tables": "node models/actions/dropAllTables.js", 
+    "create-all-tables": "node models/actions/createAllTables.js", 
+
+    "db:seed": "node seeders/seed.js",
+    "db:truncate": "node seeders/truncate.js"
+  },
+  "author": "Khalil Abed",
+  "license": "ISC",
+  "devDependencies": {
+    "morgan": "^1.10.0",
+    "nodemon": "^3.1.9"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "mysql2": "^3.12.0"
+  }
+}
