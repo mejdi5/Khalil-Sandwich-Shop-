@@ -9,14 +9,6 @@ const getUsers = async (req, res) => {
     }
 }
 
-const getUser= async (req, res) => {
-    try {
-        
-    } catch (error) {
-        console.log(error)
-    }
-}
-
 const editUser= async (req, res) => {
     try {
         
@@ -34,4 +26,4 @@ const deleteUser= async (req, res) => {
 }
 
 
-module.exports = { getUsers, getUser, editUser, deleteUser }
+module.exports = { getUsers, editUser, deleteUser }
